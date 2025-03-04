@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="./logo.png" alt="Shoe Store Logo" class="logo"> 
+                <h1>Shoe Store</h1>
+            </div>
+            <button id="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+        </div>
+        <nav>
+            <button class="filter-btn" data-category="all">All Shoes</button>
+            <button class="filter-btn" data-category="men">Men</button>
+            <button class="filter-btn" data-category="women">Women</button>
+            <button class="filter-btn" data-category="child">Children</button>
+            <button class="filter-btn" data-category="baby">Baby</button>
+        </nav>
+    </header>
+
+    <section id="products"></section>
+
+    <div id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button id="clear-cart">Clear Cart</button>
+        <button id="checkout-btn">Checkout</button>
+    </div>
+
+    <footer>
+        <p>© 2025 Shoe Store - All Rights Reserved | Designed by Fares</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
